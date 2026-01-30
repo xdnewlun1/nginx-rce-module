@@ -7,6 +7,7 @@ Module allows for command execution using PUT requests to any endpoint on an ngi
 2. Install Dependencies: (ex `sudo apt install build-essential libpcre3-dev zlib1g-dev libz-dev libssl-dev libpcre3-dev wget tar`)
 3. Add ngx_http_mycmd_module folder to nginx/src/http/modules/
 4. Run configure with the additional flag `--add-module=src/http/modules/ngx_http_mycmd_module`
+   Example Configure: `./configure --prefix=/opt/nginx --conf-path=/etc/nginx/nginx.conf --pid-path=/opt/nginx/logs/nginx.pid --with-http_ssl_module --add-module=src/http/modules/ngx_http_sslconf_module`   
 5. Make and Make Install `make -j$(nproc) && make install`
 6. Setup nginx server
 
